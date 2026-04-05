@@ -1,0 +1,24 @@
+
+<table class="table table-bordered alert-danger">
+   <thead>
+        <tr>
+            <th>Sr NO</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+            </tr>
+</thead>
+
+<tbody>
+    @for (std of stdArr; track i; let i = $index) {
+      <tr>
+        <td>{{ i + 1 }}</td>
+        <td>{{ std.fname }}</td>
+        <td>{{ std.lname }}</td>
+        <td>{{ std.email }}</td>
+        <td>{{ std.contact }}</td>
+      </tr>
+    }
+  </tbody>
+<table>

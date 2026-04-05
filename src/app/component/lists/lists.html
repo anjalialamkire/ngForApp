@@ -1,0 +1,23 @@
+
+<!-- <ul class="list-group">
+  @for (skill of skills; track i; let i = $index; let isEven = $even; let isOdd = $odd) {
+    <li class="list-group-item"
+        [class.list-group-item-danger]="isEven"
+        [class.list-group-item-primary]="isOdd">
+       {{ skill }} 
+    </li>
+  }
+</ul> -->
+
+<ul class="list-group">
+  @for (skill of skills; track i; let i = $index; let isEven = $even; let isOdd = $odd) {
+    <li class="list-group-item"
+        [ngClass]="{
+            'bg-info': isEven,
+            'bg-warning': isOdd
+
+        }">
+       {{ skill }} 
+    </li>
+  }
+</ul>

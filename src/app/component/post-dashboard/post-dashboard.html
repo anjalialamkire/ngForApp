@@ -1,0 +1,7 @@
+<div class="row">
+  @for (post of postArr; track post.postId) {
+    <div class="col-md-4 mb-4">
+      <app-post-card [postObj]="post"></app-post-card>
+    </div>
+  }
+</div>

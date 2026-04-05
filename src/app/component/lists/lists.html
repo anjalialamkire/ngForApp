@@ -13,7 +13,7 @@
   @for (skill of skills; track i; let i = $index; let isEven = $even; let isOdd = $odd) {
     <li class="list-group-item"
         [ngClass]="{
-            'bg-info': isEven,
+            'bg-danger': isEven,
             'bg-warning': isOdd
 
         }">

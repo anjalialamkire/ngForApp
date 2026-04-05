@@ -12,4 +12,10 @@ import { PostDashboard } from './component/post-dashboard/post-dashboard';
 })
 export class App {
   protected readonly title = signal('ngForApp');
+    
+  counter = signal(10);
+
+  onClick(){
+    this.counter.set(this.counter() + 1); 
+  }
 }
